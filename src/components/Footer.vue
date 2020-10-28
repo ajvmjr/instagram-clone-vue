@@ -21,6 +21,7 @@
 
 <style lang="scss" scoped>
 .v-footer {
+  background: #fafafa;
   height: 80px;
   width: 100%;
   .links {

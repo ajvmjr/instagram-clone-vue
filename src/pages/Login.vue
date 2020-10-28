@@ -14,7 +14,7 @@
             >Instagram</v-card-title
           >
 
-          <v-form>
+          <v-form @submit="login">
             <div>
               <v-text-field
                 background-color="#fafafa"
@@ -33,12 +33,16 @@
                 label="Senha"
                 type="password"
                 v-model="password"
-                :append-icon="passwordWasEntered ? 'visibility' : ''"
-                @input="hasPassword()"
               >
               </v-text-field>
             </div>
-            <v-btn color="#0095f6" class="mt-2" elevation="1" block
+            <v-btn
+              color="#0095f6"
+              class="mt-2"
+              block
+              elevation="0"
+              type="submit"
+              :loading="buttonLoading"
               >Entrar</v-btn
             >
           </v-form>
@@ -47,6 +51,9 @@
             <v-icon class="mr-2 mt-4" color="#385185">facebook</v-icon>
             <h4>Entrar com facebook</h4>
           </div>
+          <span v-show="showConfirm">
+            Usuário ou senha incorretos.
+          </span>
           <a>Esqueceu a senha?</a>
         </v-card>
         <v-card
@@ -63,24 +70,61 @@
 </template>
 
 <script>
+import axios from "axios";
 import Footer from "@/components/Footer";
 
 export default {
+  data: () => ({
+    email: "",
+    password: "",
+    responseStatus: "",
+    passwordWasEntered: false,
+    buttonLoading: false,
+    showConfirm: false,
+  }),
+
   components: {
     Footer,
   },
 
-  data: () => ({
-    email: "",
-    password: "",
-    passwordWasEntered: false,
-  }),
+  watch: {
+    responseStatus() {
+      const { responseStatus } = this;
+      if (responseStatus) {
+        this.buttonLoading = false;
+        return;
+      }
+    },
+  },
 
-  computed: {
-    hasPassword() {
-      this.password.length > 0
-        ? (this.passwordWasEntered = true)
-        : (this.passwordWasEntered = false);
+  methods: {
+    async login(e) {
+      e.preventDefault();
+      this.startButtonLoading();
+
+      const { email, password } = this;
+
+      await axios
+        .get(`http://localhost:3000/users?email=${email}&password=${password}`)
+        .then((res) => {
+          this.responseStatus = res.status;
+          const data = res.data;
+          if (this.validUser(data)) {
+            this.$store.dispatch("setUser", data[0]);
+            this.$router.push({ name: "Timeline" });
+          } else {
+            this.showConfirm = true;
+          }
+        })
+        .catch((err) => console.log(err));
+    },
+
+    validUser(data) {
+      return data.length > 0 ? true : false;
+    },
+
+    startButtonLoading() {
+      this.buttonLoading = true;
     },
   },
 };
@@ -95,7 +139,7 @@ export default {
     width: 40%;
 
     &__login {
-      height: 60%;
+      height: 90%;
       background: #fff;
       width: 75%;
       &__title {
@@ -151,6 +195,13 @@ export default {
         font-weight: 500;
         letter-spacing: 0.5px;
         padding-top: 20px;
+      }
+
+      span {
+        color: #ed4956;
+        font-size: 14px;
+        margin-top: 20px;
+        font-weight: 400;
       }
 
       a {
