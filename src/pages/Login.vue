@@ -31,8 +31,10 @@
                 dense
                 outlined
                 label="Senha"
-                type="password"
+                :type="wantsToSeePassword ? 'text' : 'password'"
                 v-model="password"
+                :append-icon="passwordWasEntered ? 'visibility' : ''"
+                @click:append="showPassword"
               >
               </v-text-field>
             </div>
@@ -42,6 +44,7 @@
               block
               elevation="0"
               type="submit"
+              :disabled="enableButton"
               :loading="buttonLoading"
               >Entrar</v-btn
             >
@@ -78,13 +81,23 @@ export default {
     email: "",
     password: "",
     responseStatus: "",
-    passwordWasEntered: false,
     buttonLoading: false,
     showConfirm: false,
+    wantsToSeePassword: false,
   }),
 
   components: {
     Footer,
+  },
+
+  computed: {
+    enableButton() {
+      return this.password.length < 8;
+    },
+
+    passwordWasEntered() {
+      return this.password.length > 0;
+    },
   },
 
   watch: {
@@ -125,6 +138,10 @@ export default {
 
     startButtonLoading() {
       this.buttonLoading = true;
+    },
+
+    showPassword() {
+      this.wantsToSeePassword = !this.wantsToSeePassword;
     },
   },
 };
