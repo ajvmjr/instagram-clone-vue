@@ -2,10 +2,71 @@
   "users": [
     {
       "id": "1",
-      "name": "Alex Junior",
+      "name": "alexjvmjr",
       "email": "alex@gmail.com",
       "password": "12345678",
       "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg"
+    }
+  ],
+  "stories": [
+    {
+      "name":"alexjvmjr",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg"
+    },
+    {
+      "name":"alexjvmjr",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg"
+    },
+    {
+      "name":"alexjvmjr",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg"
+    },
+    {
+      "name":"alexjvmjr",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg"
+    },
+    {
+      "name":"alexjvmjr",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg"
+    },
+    {
+      "name":"alexjvmjr",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg"
+    },
+    {
+      "name":"alexjvmjr",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg"
+    },
+    {
+      "name":"alexjvmjr",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg"
+    }
+  ],
+  "sugestions": [
+    {
+      "name":"alexjvmjr",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg",
+      "followedBy": ["barney", "marshall", "robin", "lily"]
+    },
+    {
+      "name":"alexjvmjr",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg",
+      "followedBy": ["barney", "marshall", "robin", "lily"]
+    },
+    {
+      "name":"alexjvmjr",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg",
+      "followedBy": ["barney", "marshall", "robin", "lily"]
+    },
+    {
+      "name":"alexjvmjr",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg",
+      "followedBy": ["barney", "marshall", "robin", "lily"]
+    },
+    {
+      "name":"alexjvmjr",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg",
+      "followedBy": ["barney", "marshall", "robin", "lily"]
     }
   ]
 }

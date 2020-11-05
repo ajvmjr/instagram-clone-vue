@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-menu bottom offset-y>
+    <v-menu bottom offset-y content-class="mt-3 arrow-top">
       <template v-slot:activator="{ on, attrs }">
         <img
           alt="user profile pic"
