@@ -1,6 +1,13 @@
 <template>
   <div>
-    <v-app-bar absolute color="white" elevation="1" outlined height="54px">
+    <v-app-bar
+      absolute
+      color="white"
+      elevation="1"
+      outlined
+      height="54px"
+      fixed
+    >
       <v-spacer />
       <v-toolbar-title>
         <h1 class="header-title">Instagram</h1>

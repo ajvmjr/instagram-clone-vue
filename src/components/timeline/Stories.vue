@@ -26,7 +26,8 @@ img {
 }
 
 p {
-  margin-top: 5px;
   font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
 }
 </style>

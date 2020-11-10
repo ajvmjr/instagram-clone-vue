@@ -14,59 +14,75 @@
       "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg"
     },
     {
-      "name":"alexjvmjr",
+      "name":"lilypad",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/4/49/Alyson_Hannigan.jpg"
+    },
+    {
+      "name":"m_erisken",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Jason_Segel_2011.jpg"
+    },
+    {
+      "name":"schmosby",
       "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg"
     },
     {
-      "name":"alexjvmjr",
-      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg"
+      "name":"barneyyy",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Neil_Patrick_Harris_%289449178210%29.jpg"
     },
     {
-      "name":"alexjvmjr",
-      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg"
+      "name":"scherbatsky",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/4/41/Cobie_Smulders_by_Gage_Skidmore_3.jpg"
     },
     {
-      "name":"alexjvmjr",
-      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg"
-    },
-    {
-      "name":"alexjvmjr",
-      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg"
-    },
-    {
-      "name":"alexjvmjr",
-      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg"
-    },
-    {
-      "name":"alexjvmjr",
-      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg"
+      "name":"tracy_m",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/0/03/Cristin_Milioti.jpg"
     }
   ],
   "sugestions": [
     {
-      "name":"alexjvmjr",
-      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg",
-      "followedBy": ["barney", "marshall", "robin", "lily"]
+      "name":"joe.tribbiani",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Matt_Le_Blanc.jpg",
+      "followedBy": ["scherbatsky", "m_eriksen", "barneyyy", "lilypad", "ch4ndlerB", "rachel_", "phoe B", "ross_"]
     },
     {
-      "name":"alexjvmjr",
-      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg",
-      "followedBy": ["barney", "marshall", "robin", "lily"]
+      "name":"ch4ndlerB",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/18/Matthew_Perry.jpg",
+      "followedBy": ["m_eriksen", "scherbatsky", "lilypad", "joe.tribbiani", "rachel_", "phoe B", "ross_"]
     },
     {
-      "name":"alexjvmjr",
-      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg",
-      "followedBy": ["barney", "marshall", "robin", "lily"]
+      "name":"rachel_",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/2/21/Jennifer_Aniston_image_3.jpg",
+      "followedBy": ["barneyyy",  "lilypad", "ch4ndlerB", "joe.tribbiani", "phoe B", "ross_"]
     },
     {
-      "name":"alexjvmjr",
-      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg",
-      "followedBy": ["barney", "marshall", "robin", "lily"]
+      "name":"phoe B",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Lisa_Kudrow_3.jpg",
+      "followedBy": ["barneyyy", "m_eriksen", "scherbatsky", "lilypad", "ch4ndlerB", "rachel_", "joe.tribbiniani", "ross_"]
     },
     {
-      "name":"alexjvmjr",
+      "name":"ross_",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/0/02/David_Schwimmer.jpg",
+      "followedBy": ["ch4ndlerB", "rachel_", "phoe B", "joe.tribbiani"]
+    }
+  ],
+  "posts": [
+    {
+      "author": "alexjvmjr",
       "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg",
-      "followedBy": ["barney", "marshall", "robin", "lily"]
+      "location": "Guarulhos, São Paulo, Brazil",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/How_I_Met_Your_Mother_cast.jpg"
+    },
+    {
+      "author": "schmosby",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Josh_Radnor_%289448570254%29.jpg",
+      "location": "NYC, United States",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/How_I_Met_Your_Mother_cast.jpg"
+    },
+    {
+      "author": "scherbatsky",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/4/41/Cobie_Smulders_by_Gage_Skidmore_3.jpg",
+      "location": "Toronto, Canada",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/How_I_Met_Your_Mother_cast.jpg"
     }
   ]
 }
